@@ -3,12 +3,17 @@ pragma solidity >=0.4.22 <0.8.0;
 
 // Truffle console helper:
 
-// Election.deployed().then(function(i) { app=i;})
+// truffle migrate --reset
+// truffle console
 
-// app.candidates(1).then(function(c){candidate = c;})
+// npm run dev
+
+// app = await Election.deployed();
+
+// candidate1 = await app.candidates(1);
 // candidate.voteCount.toNumber()
 
-// let accounts = await web3.eth.getAccounts();
+// accounts = await web3.eth.getAccounts();
 // app.vote(1, { from: accounts[0] })
 contract Election {
     struct Candidate {
